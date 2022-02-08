@@ -12,16 +12,16 @@ body {
 
 p {
     color:black;
-    font-size: 50px;
+    font-size: 20px;
     font-family: 'Roboto Mono', monospace;
     text-align: center;
     text-decoration: none;
 }
 
 .grid-item {
-    padding: 100px;
+    padding: 20px;
     width: auto;
-    height: 600px;
+    height: 150px;
     margin-bottom: 100px;
     margin-top: 50px;
     
