@@ -1,0 +1,22 @@
+body{
+    display: block;
+    margin: 8px;
+    background-color: rgb(136, 204, 221);
+    font-family: 'Roboto Mono', monospace;
+    
+}
+h2 {
+    color:wheat;
+    font-size: 40px;
+    font-family: 'Roboto Mono', monospace;
+    font-style: bold;
+    text-transform: uppercase;
+}
+.box1, .box2 {
+    width: 40%;
+    margin: 2%;
+    padding: 1%;
+    float: left;
+    display: inline-block;
+
+}
