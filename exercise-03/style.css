@@ -3,6 +3,7 @@ body{
     margin: 8px;
     background-color: rgb(136, 204, 221);
     font-family: 'Roboto Mono', monospace;
+    line-height: 1.68;
     
 }
 h2 {
@@ -11,6 +12,7 @@ h2 {
     font-family: 'Roboto Mono', monospace;
     font-style: bold;
     text-transform: uppercase;
+    line-height: 5mm;
 }
 .box1, .box2 {
     width: 40%;
@@ -19,4 +21,8 @@ h2 {
     float: left;
     display: inline-block;
 
+}
+.pullquote {
+    color: grey;
+    font-size: 20px;
 }
