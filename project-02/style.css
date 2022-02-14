@@ -9,6 +9,20 @@ body {
     padding: 30px;
 }
 
+h1 {
+    color: #A64521;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+h2 {
+    color: #F28E13;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
 p {
     color:black;
     font-size: 20px;
@@ -35,4 +49,8 @@ a {
 
 .grid-item img {
     height: 200px;
+}
+
+.top-image {
+    height: 400px;
 }
