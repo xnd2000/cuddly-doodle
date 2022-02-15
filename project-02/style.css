@@ -12,21 +12,36 @@ body {
 h1 {
     color: #A64521;
     font-size: 30px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
     text-align: center;
+    padding: 30px;
 }
 
 h2 {
     color: #F28E13;
     font-size: 20px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Archivo', sans-serif;
     text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+h3 {
+    color: #F28E13;
+    font-size: 20px;
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    padding: 30px;
+    font-weight: 400;
+    letter-spacing: 3px;
 }
 
 p {
     color:black;
     font-size: 20px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Archivo', sans-serif;
     text-align: center;
 }
 
@@ -52,5 +67,6 @@ a {
 }
 
 .top-image {
-    height: 400px;
+    height: 500px;
+    padding: 50px;
 }
