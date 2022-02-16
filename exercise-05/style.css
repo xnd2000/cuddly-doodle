@@ -4,14 +4,44 @@
     box-sizing: border-box;
 }
 
-body{
+html, body{
     display: block;
     height: 100%;
+    width: 100%;
     margin: 8px;
     background-color: #EBEDF2;
     font-family: 'Roboto Mono', monospace;
     line-height: 1.68;
 }
+
+header, footer {
+    height: 20vh;
+    background-color: yellow;
+}
+
+main {
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    width: 60%;
+}
+
+aside {
+    width: 40%;
+}
+
+@media (max-width:600px) {
+    main {
+        flex-direction: column;
+    }
+    section, aside {
+        flex-direction: column;
+    }
+}
+
 h2 {
     color:#D7F205;
     font-size: 50px;
@@ -35,7 +65,8 @@ p {
 
 .container {
     display: flex;
-    justify-content: space-around;
+    background: tomato;
+    flex-direction: column;
 }
 
 .item {

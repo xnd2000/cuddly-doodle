@@ -1,5 +1,20 @@
 body{
-    background-color: tomato;
+    background-color: #F2F2F2;
     font-family: 'Ubuntu Mono', monospace;
-    color:white
-}       
+}
+
+h1 {
+    font-family: 'Ubuntu Mono';
+    font-size: 50px;  
+    color: #99AFF2;
+}
+
+h2 {
+    font-family: 'Ubuntu Mono';
+    font-size: 30px;  
+    color: #0D0D0D;  
+}
+
+.container {
+    padding: 2%;
+}
