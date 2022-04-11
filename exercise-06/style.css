@@ -8,7 +8,10 @@
 
 body, 
 html{
-  font-family: 'Roboto', sans-serif;  
+  font-family: 'Roboto', sans-serif; 
+  height: 100%; 
+  min-height: 100vh;
+  background-color: papayawhip;
 }
 
 nav {
@@ -19,7 +22,6 @@ ul.container {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
-  
   list-style: none;
   background: tomato;
   margin: 0;
@@ -51,5 +53,123 @@ li:hover {
   }
   100% {
       background: tomato;
+  }
+}
+
+main,
+header,
+footer {
+  padding: 20px;
+  border: 1px solid #000000;
+  color: #141414;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  /*   height: 100%; */
+  overflow: auto;
+}
+
+header,
+footer {
+  line-height: 60px;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+}
+
+h3.translation {
+  margin-left: auto;
+}
+
+.en:hover,
+.pt:hover {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color: #141414;
+}
+
+main {
+  flex: 1;
+}
+
+.image img {
+  height: 260px;
+  object-fit: cover;
+  object-position: 0% 35%;
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+section {
+  height: 100%;
+  padding: 20px;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-size: 2.68em;
+}
+
+p {
+  line-height: 1.68em;
+}
+
+p.pullquote {
+  color: tomato;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  font-size: 1.68em;
+  line-height: 1.4em;
+  padding: 15px 0;
+}
+
+.image img {
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  section {
+    display: flex;
+    min-height: 0;
+  }
+
+  .column {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  h1 {
+    text-transform: capitalize;
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .image img {
+    height: 560px;
+    object-fit: cover;
+    object-position: 0% 40%;
+  }
+
+  .portuguese {
+    display: none;
   }
 }
