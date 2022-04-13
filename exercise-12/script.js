@@ -36,6 +36,7 @@ const flowers = [
   function renderFlowersToPage(flowers){
       for(i = 0; i < flowers. length; i++){
           let list_item = document.createElement("li");
+          list_item.classList.add(flowers[i].color, 'card')
 
           //flower name
           let title = document.createElement("h3");
@@ -56,17 +57,30 @@ const flowers = [
   renderFlowersToPage(flowers);
 
   //---------- FILTER FLOWERS BY COLOR
+  
+  const filterBtns = document.querySelector('.filters');
+  const cards = document.querySelectorAll('.card');
 
-let filters = document.querySelectorAll(".filters");
-let cards = document.querySelectorAll(".card");
+  function filterFn(event){
+    console.log('clicked', event.target)
 
-for (let i = 0; i < filters.length; i++) {
-  this.addEventListener("click", filterFn);
-}
+    if(event.target.classList.contains("filter-btn")){
+      const filterValue = event.target.getAttribute('data-filter');
 
-function filterFn(e) {
-  console.log("clicked", e.target);
-  for (let i = 0; i < cards.length; i++) {
-    // cards[i].classList.contains("red") ? cards[i].classList.remove('hidden') : cards[i].classList.add('hidden')
+      console.log('clicked', filterValue);
+  
+      for(let i = 0; i < cards.length; i++){
+        console.log(cards[i])
+        if(cards[i].classList.contains(filterValue) || filterValue === "all"){
+          cards[i].classList.remove("hide");
+          cards[i].classList.add("show");
+        }
+        else {
+          cards[i].classList.remove("show");
+          cards[i].classList.add("hide");
+        }
+      }
+    }
   }
-}
+
+filterBtns.addEventListener('click', filterFn);
