@@ -1,0 +1,6 @@
+img.slideshow {
+    max-width: 500px;
+    height: auto;
+    position: absolute;
+    left: -500px;
+}
