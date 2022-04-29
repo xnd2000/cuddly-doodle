@@ -1,6 +1,7 @@
 body{
     background-color: #F2F2F2;
     font-family: 'Ubuntu Mono', monospace;
+    text-decoration: none;
 }
 
 h1 {
@@ -12,7 +13,7 @@ h1 {
 h2 {
     font-family: 'Ubuntu Mono';
     font-size: 30px;  
-    color: #0D0D0D;  
+    color: #0D0D0D; 
 }
 
 .container {
