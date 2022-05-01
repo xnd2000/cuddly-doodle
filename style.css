@@ -1,5 +1,11 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: #F2F2F2;
+    background-color: #BDD7EA;
     font-family: 'Ubuntu Mono', monospace;
     text-decoration: none;
 }
@@ -7,7 +13,8 @@ body{
 h1 {
     font-family: 'Ubuntu Mono';
     font-size: 50px;  
-    color: #99AFF2;
+    color: #003C66;
+    line-height: 1.5em;
 }
 
 h2 {
